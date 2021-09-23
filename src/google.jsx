@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 export default class Google extends React.Component {
   componentDidMount() {
-    if(window) (window.adsbygoogle = window.adsbygoogle || []).push({});
+    window.onload = function() {
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  }
   };
 
   render() {
